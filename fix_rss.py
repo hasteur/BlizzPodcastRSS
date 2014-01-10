@@ -82,6 +82,43 @@ for idx, val in enumerate(epic["items"]):
     epic["items"][idx]['title'] = new_title
 feeds.append(epic)
 
+#Epic Questions Cleanup
+epic = feedparser.parse('http://epicquestions.hipcast.com/rss/epic_questions_podcast.xml')
+for idx, val in enumerate(epic["items"]):
+    new_title = '[Epic Questions Podcast]'+epic["items"][idx]['title']
+    epic["items"][idx]['title'] = new_title
+feeds.append(epic)
+
+#Legendary (Gamebreaker) Cleanup
+epic = feedparser.parse('http://www.gamebreaker.tv/category/video-game-shows/legendary-world-of-warcraft-show/feed/')
+for idx, val in enumerate(epic["items"]):
+    new_title = '[Legendary (Gamebreaker.tv)]'+epic["items"][idx]['title']
+    epic["items"][idx]['title'] = new_title
+feeds.append(epic)
+
+#PVP live Cleanup
+epic = feedparser.parse('http://feeds.soundcloud.com/users/soundcloud:users:59258636/sounds.rss')
+for idx, val in enumerate(epic["items"]):
+    new_title = '[PVP Live]'+epic["items"][idx]['title']
+    epic["items"][idx]['title'] = new_title
+feeds.append(epic)
+
+#Managrind/Manacast Cleanup
+epic = feedparser.parse('http://gdata.youtube.com/feeds/base/videos?alt=rss&orderby=published&racy=include&author=Managrind')
+for idx, val in enumerate(epic["items"]):
+    new_title = '[Managrind Youtube]'+epic["items"][idx]['title']
+    epic["items"][idx]['title'] = new_title
+    epic["items"][idx]['date'] = epic["items"][idx]['date_parsed']
+feeds.append(epic)
+
+#Stormcast Cleanup
+epic = feedparser.parse('http://www.emissarypictures.com/sc/stormcast.xml')
+for idx, val in enumerate(epic["items"]):
+    new_title = '[Stormcast]'+epic["items"][idx]['title']
+    epic["items"][idx]['title'] = new_title
+    epic["items"][idx]['date'] = epic["items"][idx]['date_parsed']
+feeds.append(epic)
+
 entries = []
 for feed in feeds:
   entries.extend( feed["items"])

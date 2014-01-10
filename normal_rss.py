@@ -22,7 +22,6 @@ urls = [
 'http://letswowpodcast.com/feed',
 'http://liquidwow.libsyn.com/rss',
 'http://middlefingerpodcast.com/feed/',
-'http://ngeonline.com/podcast/darkmoon-herald/feed/',
 'http://pressypodcast.com/?feed=podcast',
 'http://realm-maintenance.com/category/realm-maintenance/rm-microcast/feed/',
 'https://portal.aie-guild.org/feed/podcast/',
@@ -41,7 +40,6 @@ urls = [
 'http://www.auctionhousejunkies.com/feeds/posts/default?alt=rss',
 'http://www.bindonequip.com/?feed=rss2',
 'http://www.edpodcast.com/feed/',
-'http://www.epicpodcast.com/imported-20110407170325/rss.xml',
 'http://www.follow-the-leader.net/feed/',
 'http://www.gkick.net/category/podcasts/gkick/feed/',
 'http://www.gnomeseyeview.com/?feed=podcast',
@@ -85,6 +83,16 @@ urls = [
 'http://www.thehxc.com/feed/',
 'http://www.healsandheadshots.com/?feed=rss2',
 'http://www.wowgoldjournal.com/category/podcast/feed/',
+'http://justicepoints.com/category/podcast/feed/',
+'http://twinking.libsyn.com/rss',
+'http://feeds.feedburner.com/8bitbrucegaming',
+'http://geekly.podbean.com/feed/',
+'http://gamediplomat.com/category/happy-hearthstone/feed/',
+'http://hearthstoneelite.podbean.com/feed/',
+'http://ihearthu.com/category/podcast-2/feed/',
+'http://feeds.feedburner.com/AWorthyOpponent',
+'http://feeds.feedburner.com/TheDiabloPodcast',
+'http://heroesofthenexus.com/?feed=rss2',
 ]
 pool = ThreadPool(2)
 
