@@ -8,6 +8,7 @@ import pdb
 urls = [
 'http://feeds.feedburner.com/CallToAuction',
 'http://feeds.feedburner.com/theaddictedcastmp3',
+'http://feeds.feedburner.com/starcast_rss',
 ]
 pool = ThreadPool(2)
 

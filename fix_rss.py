@@ -69,6 +69,19 @@ for idx, val in enumerate(epic["items"]):
     epic["items"][idx]['title'] = new_title
 feeds.append(epic)
 
+#The Angry Chicken Cleanup
+epic = feedparser.parse('http://feeds.feedburner.com/amoveradio')
+for idx, val in enumerate(epic["items"]):
+    new_title = '[Amove Radio]'+epic["items"][idx]['title']
+    epic["items"][idx]['title'] = new_title
+feeds.append(epic)
+#The Angry Chicken Cleanup
+epic = feedparser.parse('http://feeds.feedburner.com/theangrychicken')
+for idx, val in enumerate(epic["items"]):
+    new_title = '[The Angry Chicken]'+epic["items"][idx]['title']
+    epic["items"][idx]['title'] = new_title
+feeds.append(epic)
+
 entries = []
 for feed in feeds:
   entries.extend( feed["items"])

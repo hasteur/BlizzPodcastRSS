@@ -24,6 +24,7 @@ urls = [
 'http://feeds.feedburner.com/Warcrafttrolls',
 'http://feeds.feedburner.com/WarcraftLessTraveled',
 'http://feeds.feedburner.com/WarcraftWellRead',
+'http://feeds.feedburner.com/30MinuteCooldown',
 'http://feeds.feedburner.com/blogspot/CwJAbe',
 ]
 pool = ThreadPool(2)
