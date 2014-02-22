@@ -93,6 +93,7 @@ urls = [
 'http://feeds.feedburner.com/AWorthyOpponent',
 'http://feeds.feedburner.com/TheDiabloPodcast',
 'http://heroesofthenexus.com/?feed=rss2',
+'http://geekly.podbean.com/feed/',
 ]
 pool = ThreadPool(2)
 
