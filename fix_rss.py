@@ -116,7 +116,6 @@ epic = feedparser.parse('http://www.emissarypictures.com/sc/stormcast.xml')
 for idx, val in enumerate(epic["items"]):
     new_title = '[Stormcast]'+epic["items"][idx]['title']
     epic["items"][idx]['title'] = new_title
-    epic["items"][idx]['date'] = epic["items"][idx]['date_parsed']
 feeds.append(epic)
 
 entries = []
