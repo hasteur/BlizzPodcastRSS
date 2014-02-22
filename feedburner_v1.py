@@ -32,6 +32,7 @@ urls = [
 'http://feeds.feedburner.com/trollinthedungeonpodcast',
 'http://feeds.feedburner.com/Twizzcast-Blizzpro',
 'http://feeds.feedburner.com/Hearthstone-DuelistsDiscussion',
+'http://feeds.feedburner.com/gldmkrpodcast',
 ]
 pool = ThreadPool(2)
 
